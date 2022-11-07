@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="calcapiFlow" doc:id="250bb8b8-c86c-4e9d-b76d-3994d9162974" >
 		<http:listener doc:name="Listener" doc:id="bb8061c7-21cc-4e3e-afc8-17e3d4d631a3" config-ref="HTTP_Listener_config" path="/Subraction"/>
-		<logger level="INFO" doc:name="Logger" doc:id="00c014a6-4f84-4c08-bea8-7d6e9f8b4983"/>
+		<logger level="INFO" doc:name="Logger" doc:id="00c014a6-4f84-4c08-bea8-7d6e9f8b4983" message="Empty space is being overrided now"/>
 		<ee:transform doc:name="Transform Message" doc:id="a3ac25b4-60e1-45ad-9406-7060d0857633" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
